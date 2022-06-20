@@ -11,32 +11,55 @@ class DrawerView extends StatelessWidget {
           DrawerHeader(child: Stack(
             children: [
               Align (
-                alignment: Alignment.bottomCenter + Alignment(0.001 , -2.001),
+                alignment: Alignment.bottomCenter + const Alignment(0.001 , -2.001),
                 child: CircleAvatar( 
-                backgroundImage: AssetImage('assets/man.png'),
-                  radius:45,child: Align( alignment: Alignment.center + Alignment(000.1 , 2),
-                child: Text("Hello, Guest" , style: TextStyle(color: Colors.black ,fontWeight: FontWeight.bold ),),
+                backgroundImage: const AssetImage('assets/man.png'),
+                  radius:45,child: Align( alignment: Alignment.center + const Alignment(000.1 , 2),
+                child: const Text("Hello, Guest" , 
+                  style: const TextStyle(color: Colors.black ,fontWeight: FontWeight.bold ),),
                 ),
                 ),
               ),
             ],  
           )),
 
-       Center( widthFactor: 40,
-         child: ListTile(
+       const ListTile(
 
-           horizontalTitleGap: 50.0,
-           leading: Icon(Icons.home),
 
-         ),
-       ) ,  Center( widthFactor: 40,
-         child: ListTile(
+         leading: const Icon(Icons.home),
+         title: Text('Home'),
 
-           horizontalTitleGap: 50.0,
-           leading: Icon(Icons.home),
+       ) ,  const ListTile(
 
-         ),
-       ) ],
+
+         leading: const Icon(Icons.miscellaneous_services_sharp),
+            title: Text('Services'),
+
+       ),ListTile(
+
+
+         leading: Image.asset('assets/man.png'),
+            title: const Text('Portfolio'),
+
+         ), ListTile(
+
+
+           leading:  Image.asset('assets/work.png'),
+              title: Text('Career'),
+
+         ),const ListTile(
+
+
+           leading: const Icon(Icons.miscellaneous_services_sharp),
+              title: const Text('Contact Us'),
+
+         ),const ListTile(
+
+
+           leading: Icon(Icons.miscellaneous_services_sharp),
+              title: Text("About Us"),
+
+         ), ],
 
       ),
     );
