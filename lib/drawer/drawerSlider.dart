@@ -44,7 +44,7 @@ class DrawerView extends StatelessWidget {
          ), ListTile(
 
 
-           leading:  Image.asset('assets/work.png'),
+           leading:  Image.network('https://cdn-icons-png.flaticon.com/512/943/943026.png'),
               title: Text('Career'),
 
          ),const ListTile(
