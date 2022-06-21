@@ -15,20 +15,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
-  carousel_indicator:
-    dependency: "direct main"
-    description:
-      name: carousel_indicator
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.6"
-  carousel_slider:
-    dependency: "direct main"
-    description:
-      name: carousel_slider
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "4.1.1"
   characters:
     dependency: transitive
     description:
@@ -76,6 +62,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_image_slideshow:
+    dependency: "direct main"
+    description:
+      name: flutter_image_slideshow
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.2"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -186,3 +179,4 @@ packages:
     version: "2.1.1"
 sdks:
   dart: ">=2.16.2 <3.0.0"
+  flutter: ">=1.17.0"
