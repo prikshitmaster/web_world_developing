@@ -1,4 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:webworldapp/main.dart';
+import 'package:webworldapp/pages/About_Page.dart';
+import 'package:webworldapp/pages/Career_Page.dart';
+import 'package:webworldapp/pages/Contact_Page.dart';
+import 'package:webworldapp/pages/Service_Page.dart';
+
+import '../pages/Portfolio_Page.dart';
 
 class DrawerView extends StatelessWidget {
   const DrawerView({Key? key}) : super(key: key);
@@ -8,59 +15,174 @@ class DrawerView extends StatelessWidget {
     return Drawer(
       child: ListView(
         children: [
-          DrawerHeader(child: Stack(
+          DrawerHeader(
+              child: Stack(
             children: [
-              Align (
-                alignment: Alignment.bottomCenter + const Alignment(0.001 , -2.001),
-                child: CircleAvatar( 
-                backgroundImage: const AssetImage('assets/man.png'),
-                  radius:45,child: Align( alignment: Alignment.center + const Alignment(000.1 , 2),
-                child: const Text("Hello, Guest" , 
-                  style: const TextStyle(color: Colors.black ,fontWeight: FontWeight.bold ),),
-                ),
+              Align(
+                alignment:
+                    Alignment.bottomCenter + const Alignment(0.001, -2.001),
+                child: CircleAvatar(
+                  backgroundImage: AssetImage('assets/man.png'),
+                  radius: 45,
+                  child: Align(
+                    alignment: Alignment.center + const Alignment(000.1, 2),
+                    child: Text(
+                      "Hello, Guest",
+                      style: TextStyle(
+                          color: Colors.black, fontWeight: FontWeight.bold),
+                    ),
+                  ),
                 ),
               ),
-            ],  
+            ],
           )),
-
-       const ListTile(
-
-
-         leading: const Icon(Icons.home),
-         title: Text('Home'),
-
-       ) ,  const ListTile(
-
-
-         leading: const Icon(Icons.miscellaneous_services_sharp),
-            title: Text('Services'),
-
-       ),ListTile(
-
-
-         leading: Image.asset('assets/man.png'),
-            title: const Text('Portfolio'),
-
-         ), ListTile(
-
-
-           leading:  Image.network('https://cdn-icons-png.flaticon.com/512/943/943026.png'),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => MainPage()));
+            },
+            child: ListTile(
+              leading: CircleAvatar(
+                child: Image.asset(
+                  'assets/homeFancy.png', /* home */
+                ),
+                radius: 13,
+                backgroundColor: Colors.white,
+              ),
+              title: Text('Home'),
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Divider(
+            height: 5,
+            thickness: 1,
+            indent: 50,
+            endIndent: 50,
+            color: Colors.grey,
+          ),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Service()));
+            },
+            child: ListTile(
+              leading: CircleAvatar(
+                child: Image.asset(
+                  'assets/serviceFancy.png', /* Service */
+                ),
+                radius: 13,
+                backgroundColor: Colors.white,
+              ),
+              title: Text('Services'),
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Divider(
+            height: 5,
+            thickness: 1,
+            indent: 50,
+            endIndent: 50,
+            color: Colors.grey,
+          ),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Portfolio()));
+            },
+            child: ListTile(
+              leading: CircleAvatar(
+                child: Image.network(
+                  'https://bit.ly/3QC0xqj', /* Portfolio */
+                ),
+                radius: 13,
+                backgroundColor: Colors.white,
+              ),
+              title: Text('Portfolio'),
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Divider(
+            height: 5,
+            thickness: 1,
+            indent: 50,
+            endIndent: 50,
+            color: Colors.grey,
+          ),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Career()));
+            },
+            child: ListTile(
+              leading: CircleAvatar(
+                child: Image.network(
+                  'https://bit.ly/3OuLBsu', /* Career */
+                ),
+                radius: 13,
+                backgroundColor: Colors.white,
+              ),
               title: Text('Career'),
-
-         ),const ListTile(
-
-
-           leading: const Icon(Icons.miscellaneous_services_sharp),
-              title: const Text('Contact Us'),
-
-         ),const ListTile(
-
-
-           leading: Icon(Icons.miscellaneous_services_sharp),
-              title: Text("About Us"),
-
-         ), ],
-
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Divider(
+            height: 5,
+            thickness: 1,
+            indent: 50,
+            endIndent: 50,
+            color: Colors.grey,
+          ),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Contact()));
+            },
+            child: ListTile(
+              leading: CircleAvatar(
+                child: Image.asset(
+                  'assets/contactFancy.png', /* Contact Us */
+                ),
+                radius: 13,
+                backgroundColor: Colors.white,
+              ),
+              title: Text('Contact Us'),
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Divider(
+            height: 5,
+            thickness: 1,
+            indent: 50,
+            endIndent: 50,
+            color: Colors.grey,
+          ),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => AboutUs()));
+            },
+            child: ListTile(
+              leading: CircleAvatar(
+                child: Image.network(
+                  'https://bit.ly/3HGn5lY', /* About Us  */
+                ),
+                radius: 13,
+                backgroundColor: Colors.white,
+              ),
+              title: Text('About Us'),
+            ),
+          ),
+        ],
       ),
     );
   }
