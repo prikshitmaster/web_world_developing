@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         iconTheme: const IconThemeData(color: Colors.black, size: 30),
         backgroundColor: Colors.white,
@@ -49,18 +50,19 @@ class HomePage extends StatelessWidget {
             ),
             Container(
                 child: Image(
-                  image: NetworkImage(
-                      'https://www.cumulations.com/wp-content/uploads/2020/12/index-img.jpg'),
-                  fit: BoxFit.cover,
-                )),
+              image: NetworkImage(
+                  'https://www.cumulations.com/wp-content/uploads/2020/12/index-img.jpg'),
+              fit: BoxFit.cover,
+            )),
             Container(
-              width: 500.0,
-              color: Color(0xFFF3F7FA),
-              height: 500.0,
+              width: 500.0, // background size
+              color: Color(0xFFF3F7FA), //Background Color
+              height: 400.0,
               child: Stack(
                 children: [
                   Align(
                     alignment: Alignment.topCenter + Alignment(0, .2),
+                    // title aligment
                     child: Container(
                       child: Text(
                         'Our Clients',
@@ -73,6 +75,7 @@ class HomePage extends StatelessWidget {
                   ),
                   Align(
                     alignment: Alignment.topCenter + Alignment(0, .38),
+                    //description aligment
                     child: Container(
                       padding: EdgeInsets.all(10),
                       child: Text(
@@ -84,26 +87,164 @@ class HomePage extends StatelessWidget {
                           textAlign: TextAlign.center),
                     ),
                   ),
-                  Row(
-                    children: [
-                      Container(
-                        height: 100,
-                        width: 100,
-                        child: Card(
-                          semanticContainer: true,
-                          clipBehavior: Clip.antiAliasWithSaveLayer,
-                          child: Image.network(
-                            'https://placeimg.com/640/480/any',
-                            fit: BoxFit.fill,
+                  Align(
+                    alignment: Alignment.center + Alignment(0.5, -0.25),
+                    // card postion aligment
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 80, //card size
+                          width: 135,
+                          child: Card(
+                            //card design
+                            semanticContainer: true,
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            child: null,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                            elevation: 2,
+                            margin: EdgeInsets.all(10),
                           ),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                          elevation: 5,
-                          margin: EdgeInsets.all(10),
                         ),
-                      ),
-                    ],
+                        Container(
+                          height: 80, //card size
+                          width: 140,
+                          child: Card(
+                            //card design
+                            semanticContainer: true,
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            child: null,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                            elevation: 2,
+                            margin: EdgeInsets.all(10),
+                          ),
+                        ),
+                        Container(
+                          height: 80, //card size
+                          width: 135,
+                          child: Card(
+                            //card design
+                            semanticContainer: true,
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            child: null,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                            elevation: 2,
+                            margin: EdgeInsets.all(10),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.center + Alignment(0.5, 0.2),
+                    // card postion aligment
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 80, //card size
+                          width: 135,
+                          child: Card(
+                            //card design
+                            semanticContainer: true,
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            child: null,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                            elevation: 2,
+                            margin: EdgeInsets.all(10),
+                          ),
+                        ),
+                        Container(
+                          height: 80, //card size
+                          width: 140,
+                          child: Card(
+                            //card design
+                            semanticContainer: true,
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            child: null,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                            elevation: 2,
+                            margin: EdgeInsets.all(10),
+                          ),
+                        ),
+                        Container(
+                          height: 80, //card size
+                          width: 135,
+                          child: Card(
+                            //card design
+                            semanticContainer: true,
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            child: null,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                            elevation: 2,
+                            margin: EdgeInsets.all(10),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.center + Alignment(0.5, 0.65),
+                    // card postion aligment
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 80, //card size
+                          width: 135,
+                          child: Card(
+                            //card design
+                            semanticContainer: true,
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            child: null,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                            elevation: 2,
+                            margin: EdgeInsets.all(10),
+                          ),
+                        ),
+                        Container(
+                          height: 80, //card size
+                          width: 140,
+                          child: Card(
+                            //card design
+                            semanticContainer: true,
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            child: null,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                            elevation: 2,
+                            margin: EdgeInsets.all(10),
+                          ),
+                        ),
+                        Container(
+                          height: 80, //card size
+                          width: 135,
+                          child: Card(
+                            //card design
+                            semanticContainer: true,
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            child: null,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                            elevation: 2,
+                            margin: EdgeInsets.all(10),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),
