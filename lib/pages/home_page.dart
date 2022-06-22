@@ -2,7 +2,6 @@ import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 
 import '../drawer/drawerSlider.dart';
 
@@ -16,60 +15,108 @@ class HomePage extends StatelessWidget {
         iconTheme: const IconThemeData(color: Colors.black, size: 30),
         backgroundColor: Colors.white,
       ),
-      body: Column(
-        children: [
-          ImageSlideshow(
-            width: double.infinity,
-            height: 500,
-            initialPage: 0,
-            indicatorColor: Colors.grey,
-            children: [
-              Padding(
-                padding: EdgeInsets.all(5),
-                child: Image.asset(
-                  'assets/graphic.png',
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              child: Text(
+                "We build digital products with user-centered design.",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'proxima'),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              padding: EdgeInsets.all(10),
+              child: Text(
+                  "Leading digital agency with excellence in various industries. We deliver groundbreaking mobile apps and web solutions that take your business to the next level.",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      fontSize: 17,
+                      fontWeight: FontWeight.w100,
+                      fontFamily: 'proxima')),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Container(
+                child: Image(
+                  image: NetworkImage(
+                      'https://www.cumulations.com/wp-content/uploads/2020/12/index-img.jpg'),
                   fit: BoxFit.cover,
-                ),
+                )),
+            Container(
+              width: 500.0,
+              color: Color(0xFFF3F7FA),
+              height: 500.0,
+              child: Stack(
+                children: [
+                  Align(
+                    alignment: Alignment.topCenter + Alignment(0, .2),
+                    child: Container(
+                      child: Text(
+                        'Our Clients',
+                        style: TextStyle(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 25,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.topCenter + Alignment(0, .38),
+                    child: Container(
+                      padding: EdgeInsets.all(10),
+                      child: Text(
+                          'We have earned a long list of contented clients by delivering top-notch IT solutions.',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w100,
+                            fontSize: 17,
+                          ),
+                          textAlign: TextAlign.center),
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        height: 100,
+                        width: 100,
+                        child: Card(
+                          semanticContainer: true,
+                          clipBehavior: Clip.antiAliasWithSaveLayer,
+                          child: Image.network(
+                            'https://placeimg.com/640/480/any',
+                            fit: BoxFit.fill,
+                          ),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10.0),
+                          ),
+                          elevation: 5,
+                          margin: EdgeInsets.all(10),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
-              Image.asset(
-                'assets/graphic.png',
-                fit: BoxFit.cover,
+            ),
+            Container(
+              child: Image(
+                image: AssetImage('assets/process.png'),
               ),
-              Image.asset(
-                'assets/seo.jpg',
-                fit: BoxFit.cover,
-              ),
-            ],
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Row(
-            children: [
-              Card(
-                child: ConstrainedBox(
-                  constraints: BoxConstraints(maxHeight: 105),
-                  child: Image.network('https://bit.ly/39Gtfpu'),
-                ),
-              ),
-              Card(
-                child: ConstrainedBox(
-                  constraints: BoxConstraints(maxHeight: 105),
-                  child: Image.network('https://bit.ly/3HIl6gE'),
-                ),
-              ),
-            ],
-          ),
-        ],
+            ),
+          ],
+        ),
       ),
       drawer: DrawerView(),
     );
   }
-
-  final List _image = [
-    "https://bit.ly/3QuwSiZ",
-    " https://bit.ly/3QDrPfU",
-    "https://bit.ly/3QuwSiZ",
-    " https://bit.ly/3QDrPfU"
-  ];
 }
