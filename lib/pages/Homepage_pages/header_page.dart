@@ -56,8 +56,11 @@ class Respon extends StatelessWidget {
               height: 15,
             ),
             ImageSlider_HomePage(),
-            OurClients(),
+            Divider(
+              thickness: 1,
+            ),
             service_HomePage(),
+            OurClients(),
           ],
         ),
       ),

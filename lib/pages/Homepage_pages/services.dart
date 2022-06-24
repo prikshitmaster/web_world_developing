@@ -178,7 +178,7 @@ class service_HomePage extends StatelessWidget {
               ),
             ],
           ),
-        ),
+        ), // host your website
         Container(
           padding: EdgeInsets.all(10),
           height: 250,
@@ -227,7 +227,7 @@ class service_HomePage extends StatelessWidget {
               ),
             ],
           ), //Web Hosting Space
-        ),
+        ), // web hosting space
         Container(
           padding: EdgeInsets.all(10),
           height: 250,
@@ -265,6 +265,57 @@ class service_HomePage extends StatelessWidget {
                   child: Container(
                     child: Text(
                       " We will Provide High end Security to your website on the Internet that encrypts the messages between the visitor and the site to ensure that no hacker or eavesdropper can intercept the information",
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontFamily: 'proxima',
+                        fontWeight: FontWeight.w500,
+                        color: Color(0xFFB1B1B1),
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ), //Web Hosting Space
+        ), // secure your website
+        Container(
+          padding: EdgeInsets.all(10),
+          height: 250,
+
+          child: Stack(
+            children: [
+              Align(
+                alignment: Alignment.bottomCenter + Alignment(0, -1.9),
+                child: Container(
+                  child: Image(
+                    image: NetworkImage(
+                        'https://webworlddeveloping.com/pics/clock.png',
+                        scale: 1.9),
+                  ),
+                ),
+              ),
+              Align(
+                alignment: Alignment.bottomCenter + Alignment(0, -1.1),
+                child: Container(
+                  child: Text(
+                    " 24/7 Tech Support",
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontFamily: 'proxima',
+                        fontWeight: FontWeight.w500),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(right: 40) +
+                    EdgeInsets.only(left: 40) +
+                    EdgeInsets.only(top: 60),
+                child: Align(
+                  alignment: Alignment.bottomCenter + Alignment(0, -0.6),
+                  child: Container(
+                    child: Text(
+                      "We simply Provide technical service around the clock. To provide such a seamless support,By adopting Various Solutions ",
                       style: TextStyle(
                         fontSize: 15,
                         fontFamily: 'proxima',

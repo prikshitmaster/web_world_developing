@@ -16,25 +16,9 @@ class DrawerView extends StatelessWidget {
       child: ListView(
         children: [
           DrawerHeader(
-              child: Stack(
-            children: [
-              Align(
-                alignment:
-                    Alignment.bottomCenter + const Alignment(0.001, -2.001),
-                child: CircleAvatar(
-                  backgroundImage: AssetImage('assets/man.png'),
-                  radius: 45,
-                  child: Align(
-                    alignment: Alignment.center + const Alignment(000.1, 2),
-                    child: Text(
-                      "Hello, Guest",
-                      style: TextStyle(
-                          color: Colors.black, fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                ),
-              ),
-            ],
+              child: Image(
+            image: NetworkImage('https://webworlddeveloping.com/pics/wwd.png',
+                scale: 3),
           )),
           GestureDetector(
             onTap: () {
