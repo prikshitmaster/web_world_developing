@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:webworldapp/drawer/drawerSlider.dart';
-import 'package:webworldapp/pages/home_page.dart';
+import 'package:flutter/services.dart';
+import 'package:webworldapp/pages/Homepage_pages/home_page.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
   runApp(MaterialApp(
     home: MainPage(),
   ));
