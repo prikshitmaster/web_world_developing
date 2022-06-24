@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class service_HomePage extends StatelessWidget {
   const service_HomePage({Key? key}) : super(key: key);

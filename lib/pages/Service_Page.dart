@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class Service extends StatelessWidget {
   const Service({Key? key}) : super(key: key);
@@ -178,6 +179,13 @@ class Service extends StatelessWidget {
                         fontFamily: 'proxima',
                         color: Color(0xFFB1B1B1))),
               ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              child: Lottie.network(
+                  'https://assets1.lottiefiles.com/packages/lf20_qo07xg45.json'),
             ),
           ],
         ),
