@@ -19,7 +19,7 @@ class AboutUs extends StatelessWidget {
             Container(
               height: 250,
               width: 400,
-              child: Image(image: NetworkImage('https://bit.ly/3u4OoR5'
+              child: Image(image: AssetImage('assets/AboutUsFency.PNG'
                 ,), fit: BoxFit.fill,),
             ),
             Container(
@@ -115,14 +115,14 @@ class AboutUs extends StatelessWidget {
 
                       children: [
 
-                        Image.network(
-                          'https://raw.githubusercontent.com/Alfa1832/web_worls/master/assets/Mission.jpg',
+                        Image.asset(
+                          'assets/Mission.jpg',
                           fit: BoxFit.cover,),
-                        Image.network(
-                          'https://raw.githubusercontent.com/Alfa1832/web_worls/master/assets/Values.jpg',
+                        Image.asset(
+                          'assets/Vision.jpg',
                           fit: BoxFit.cover,),
-                        Image.network(
-                          'https://raw.githubusercontent.com/Alfa1832/web_worls/master/assets/Vision.jpg',
+                        Image.asset(
+                          'assets/Values.jpg',
                           fit: BoxFit.cover,),
 
 

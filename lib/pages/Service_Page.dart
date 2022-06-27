@@ -23,8 +23,7 @@ class Service extends StatelessWidget {
               height: 400,
               decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: NetworkImage(
-                          'https://webworlddeveloping.com/img/ppc.png'))),
+                      image: AssetImage('assets/ppc.png'))),
             ),
             SizedBox(
               height: 15,

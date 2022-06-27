@@ -15,8 +15,8 @@ class Respon extends StatelessWidget {
       appBar: AppBar(
         iconTheme: const IconThemeData(color: Colors.black, size: 30),
         centerTitle: true,
-        title: Image.network(
-          'https://webworlddeveloping.com/pics/wwd.png',
+        title: Image.asset(
+          'assets/wwd.png',
           scale: 70,
         ), //web world app bar logo
         backgroundColor: Colors.white,

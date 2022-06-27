@@ -17,8 +17,8 @@ class DrawerView extends StatelessWidget {
         children: [
           DrawerHeader(
               child: Image(
-            image: NetworkImage('https://webworlddeveloping.com/pics/wwd.png',
-                scale: 3),
+            image: AssetImage('assets/wwd.png',
+            ),
           )),
           GestureDetector(
             onTap: () {
@@ -79,8 +79,8 @@ class DrawerView extends StatelessWidget {
             },
             child: ListTile(
               leading: CircleAvatar(
-                child: Image.network(
-                  'https://bit.ly/3QC0xqj', /* Portfolio */
+                child: Image.asset(
+                  'assets/portfoliofency.png', /* Portfolio */
                 ),
                 radius: 13,
                 backgroundColor: Colors.white,
@@ -105,8 +105,8 @@ class DrawerView extends StatelessWidget {
             },
             child: ListTile(
               leading: CircleAvatar(
-                child: Image.network(
-                  'https://bit.ly/3OuLBsu', /* Career */
+                child: Image.asset(
+                  'assets/careerfency.png', /* Career */
                 ),
                 radius: 13,
                 backgroundColor: Colors.white,
@@ -157,8 +157,8 @@ class DrawerView extends StatelessWidget {
             },
             child: ListTile(
               leading: CircleAvatar(
-                child: Image.network(
-                  'https://bit.ly/3HGn5lY', /* About Us  */
+                child: Image.asset(
+                  'assets/aboutfency.png', /* About Us  */
                 ),
                 radius: 13,
                 backgroundColor: Colors.white,

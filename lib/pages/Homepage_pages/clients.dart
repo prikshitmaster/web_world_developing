@@ -6,7 +6,9 @@ class OurClients extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      child: Expanded(
+
+      child: Flexible(
+        fit: FlexFit.tight,
         child: Container(
           // width: 450.0, // background size
           color: Color(0xFFF3F7FA), //Background Color
@@ -47,7 +49,7 @@ class OurClients extends StatelessWidget {
                   children: [
                     Container(
                       height: 80, //card size
-                      width: 135,
+                      width: 130,
                       child: Card(
                         //card design
                         semanticContainer: true,
@@ -66,7 +68,7 @@ class OurClients extends StatelessWidget {
                     ),
                     Container(
                       height: 80, //card size
-                      width: 140,
+                      width: 130,
                       child: Card(
                         //card design
                         semanticContainer: true,
@@ -86,7 +88,7 @@ class OurClients extends StatelessWidget {
                     ),
                     Container(
                       height: 80, //card size
-                      width: 135,
+                      width: 130,
                       child: Card(
                         //card design
                         semanticContainer: true,
@@ -114,7 +116,7 @@ class OurClients extends StatelessWidget {
                   children: [
                     Container(
                       height: 80, //card size
-                      width: 135,
+                      width: 130,
                       child: Card(
                         //card design
                         semanticContainer: true,
@@ -134,7 +136,7 @@ class OurClients extends StatelessWidget {
                     ),
                     Container(
                       height: 80, //card size
-                      width: 140,
+                      width: 130,
                       child: Card(
                         //card design
                         semanticContainer: true,
@@ -154,7 +156,7 @@ class OurClients extends StatelessWidget {
                     ),
                     Container(
                       height: 80, //card size
-                      width: 135,
+                      width: 130,
                       child: Card(
                         //card design
                         semanticContainer: true,
@@ -182,7 +184,7 @@ class OurClients extends StatelessWidget {
                   children: [
                     Container(
                       height: 80, //card size
-                      width: 135,
+                      width: 130,
                       child: Card(
                         //card design
                         semanticContainer: true,
@@ -200,7 +202,7 @@ class OurClients extends StatelessWidget {
                     ),
                     Container(
                       height: 80, //card size
-                      width: 140,
+                      width: 130,
                       child: Card(
                         //card design
                         semanticContainer: true,
@@ -219,7 +221,7 @@ class OurClients extends StatelessWidget {
                     ),
                     Container(
                       height: 80, //card size
-                      width: 135,
+                      width: 130,
                       child: Card(
                         //card design
                         semanticContainer: true,

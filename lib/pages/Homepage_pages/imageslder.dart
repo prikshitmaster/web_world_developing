@@ -9,14 +9,14 @@ class ImageSlider_HomePage extends StatelessWidget {
     return Container(
         width: double.infinity,
         height: 265,
-        child: ImageSlideshow(
+        child: const ImageSlideshow(
           children: [
             Image(
-              image: NetworkImage('https://bit.ly/3tTqs3k'),
+              image: AssetImage('assets/Slide1.png'),
               fit: BoxFit.cover,
             ),
             Image(
-              image: NetworkImage('https://bit.ly/3HNIZUq'),
+              image: AssetImage('assets/Slide2.png'),
               fit: BoxFit.cover,
             ),
             Image(
