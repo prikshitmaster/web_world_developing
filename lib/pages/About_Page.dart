@@ -295,61 +295,27 @@ class AboutUs extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(10),
               height: 350,
-              child: const Card(
+              child: Card(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
                 elevation: 5,
-                child: ListTile(
-                  contentPadding: EdgeInsets.all(30),
-                  title: Text(
-                    '"When it comes to customer service, I rank Web World amongst the very best! Nothing is ever too hard.The people at this Company understand that we need to provide great services on a ongoing basis to succeed in today'
-                    "'"
-                    's fast moving market."',
-                    style: TextStyle(
-                        fontWeight: FontWeight.w400,
-                        fontSize: 18,
-                        color: Color(0xFFacacac)),
-                    textAlign: TextAlign.justify,
-                  ),
-                  subtitle: Padding(
-                    padding: EdgeInsets.only(top: 40),
-                    child: Text(
-                      "American Global Metals.",
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 18,
-                          decoration: TextDecoration.underline),
-                    ),
-                  ),
+                child: const Image(
+                  image: AssetImage('assets/testi3.PNG'),
                 ),
               ),
             ),
             Container(
               padding: const EdgeInsets.all(10),
               height: 350,
-              child: const Card(
-                elevation: 5,
-                child: ListTile(
-                  contentPadding: EdgeInsets.only(top: 30, right: 15, left: 15),
-                  title: Text(
-                    '"We have found Web World a perfect partner for website design and SEO.I have found Web World team professional,responsive and committed to high standards technically and in customer service."',
-                    style: TextStyle(
-                        fontWeight: FontWeight.w400,
-                        fontSize: 18,
-                        color: Color(0xFFacacac)),
-                    textAlign: TextAlign.center,
-                  ),
-                  subtitle: Padding(
-                    padding: EdgeInsets.only(
-                      top: 40,
-                    ),
-                    child: Text(
-                      "Genesis Incorporation.",
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 18,
-                          decoration: TextDecoration.underline),
-                    ),
-                  ),
+              child: Card(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
                 ),
+                child: const Image(
+                  image: AssetImage('assets/testi1.PNG'),
+                ),
+                elevation: 5,
               ),
             ),
             const SizedBox(
@@ -357,53 +323,53 @@ class AboutUs extends StatelessWidget {
             ),
             Container(
               padding: const EdgeInsets.all(10),
-              height: 500,
+              height: 400,
               width: 430,
-              child: GestureDetector(
-                onTap: () {},
-                child: Card(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  elevation: 5,
-                  child: Stack(
-                    children: [
-                      Align(
-                        alignment: Alignment.topLeft,
-                        child: Column(
-                          children: [
-                            RichText(
-                              text: TextSpan(
-                                  text: " ❝ ",
-                                  style: TextStyle(
-                                      fontSize: 150,
-                                      color: Colors.greenAccent)),
-                            ),
-                            RichText(
-                              text: TextSpan(
-                                  text: " ❝ ",
-                                  style: TextStyle(
-                                      fontSize: 150,
-                                      color: Colors.greenAccent)),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Align(
-                        alignment:
-                            Alignment.bottomLeft + const Alignment(0.5, -0.2),
-                        child: const CircleAvatar(
-                          radius: 30.0,
-                          backgroundImage:
-                              NetworkImage('https://bit.ly/3bAfmtw'),
-                          backgroundColor: Colors.transparent,
-                        ),
-                      ),
-                    ],
-                  ),
+              child: Card(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
                 ),
+                elevation: 5,
+                child: const Image(
+                  image: AssetImage('assets/testi2.PNG'),
+                ),
+                // child: Stack(
+                //   children: [
+                //     Align(
+                //       alignment: Alignment.topLeft,
+                //       child: Column(
+                //         children: [
+                //           RichText(
+                //             text: TextSpan(
+                //                 text: " ❝ ",
+                //                 style: TextStyle(
+                //                     fontSize: 150,
+                //                     color: Colors.greenAccent)),
+                //           ),
+                //           RichText(
+                //             text: TextSpan(
+                //                 text: " ",
+                //                 style: TextStyle(
+                //                     fontSize: 150,
+                //                     color: Colors.greenAccent)),
+                //           ),
+                //         ],
+                //       ),
+                //     ),
+                //     Align(
+                //       alignment:
+                //           Alignment.bottomLeft + const Alignment(0.5, -0.2),
+                //       child: const CircleAvatar(
+                //         radius: 30.0,
+                //         backgroundImage:
+                //             NetworkImage('https://bit.ly/3bAfmtw'),
+                //         backgroundColor: Colors.transparent,
+                //       ),
+                //     ),
+                //   ],
+                // ),
               ),
-            ),
+              ),
           ],
         ),
       ),
