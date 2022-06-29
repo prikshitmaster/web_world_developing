@@ -17,17 +17,26 @@ class Portfolio extends StatelessWidget {
           iconTheme: IconThemeData(color: Colors.black, size: 30),
           backgroundColor: Colors.white,
 
-          bottom: TabBar(
-            isScrollable: true,
+          bottom: new PreferredSize(
+            preferredSize: new Size(30.0, 30.0),
+            child: TabBar(
+              isScrollable: true,
 
-            tabs: [
+              tabs: [
 
-              Text("All Projects",style: TextStyle(color: Colors.black,)),
-              Text("Websites",style: TextStyle(color: Colors.black)),
-              Text("Android",style: TextStyle(color: Colors.black)),
-              Text("Graphics",style: TextStyle(color: Colors.black)),
+                 Padding(
+                   padding: const EdgeInsets.all(8.0),
+                   child: Container(
 
-            ],
+                      child: Text("All Projects",style: TextStyle(color: Colors.black,))
+                ),
+                 ),
+                Text("Websites",style: TextStyle(color: Colors.black)),
+                Text("Android",style: TextStyle(color: Colors.black)),
+                Text("Graphics",style: TextStyle(color: Colors.black)),
+
+              ],
+            ),
           ),
 
         ),

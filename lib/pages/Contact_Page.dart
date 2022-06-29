@@ -111,6 +111,55 @@ class Contact extends StatelessWidget {
                 image: AssetImage('assets/map.jpg'),
                 fit: BoxFit.fill,
               ),
+              Container(
+                padding: EdgeInsets.all(15),
+                child: Form(
+                  child: Column(
+                    children: [
+                      Text("Have You Any Questions?",style: TextStyle(fontWeight: FontWeight.w400,fontSize: 20,),),
+                      Divider(
+                        indent: 90,
+                        endIndent: 90,
+                        thickness: 2,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 10,right: 5,left: 5,bottom: 30),
+                        child: Text("Please contact us using the form and we’ll get back to you as soon as possible.",style: TextStyle(color: Colors.grey,fontSize: 16),),
+                      ),
+                      TextFormField(
+                        
+                        decoration: InputDecoration(
+                          hintText: "Email Address",
+                          hintStyle: TextStyle(fontWeight: FontWeight.bold,color: Color(0xFFC6C6C6)),
+
+                          //hintTextDirection: TextDirection.,
+                          filled: true,
+                          border: OutlineInputBorder(
+                              borderSide: BorderSide.none,
+                              borderRadius: BorderRadius.circular(50)
+                          ),
+
+                        ),
+                      ),
+
+                      SizedBox(height: 30,),
+
+                      TextFormField(
+                        decoration: InputDecoration(
+                          hintText: "Phone",
+                          filled: true,
+                          border: OutlineInputBorder(
+                              borderSide: BorderSide.none,
+                              borderRadius: BorderRadius.circular(50)
+                          ),
+
+                        ),
+                      ),
+
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ));
