@@ -46,7 +46,7 @@ class Our_Work extends StatelessWidget {
                         children: [
                           Align(
                             alignment: Alignment.topLeft + Alignment(0.1, 0.3),
-                            child: CircleAvatar(
+                            child: const CircleAvatar(
                               backgroundColor: Colors.white,
                               radius: 18,
                               backgroundImage: NetworkImage(
